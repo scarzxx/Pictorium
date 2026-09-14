@@ -6,6 +6,7 @@ services:
     image: eful97/pictorium:latest
     container_name: pictorium
     restart: unless-stopped
+    network_mode: bridge
     ports:
       # Host bind/porta configurabili (default 0.0.0.0:8080). La porta interna
       # resta 8080 (PORT/HOSTNAME sotto + healthcheck): cambia solo l'esposizione.
